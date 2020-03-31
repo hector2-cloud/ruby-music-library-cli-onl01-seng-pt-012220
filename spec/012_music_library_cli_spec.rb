@@ -1,4 +1,4 @@
-describe 'Music Library CLI' do
+ddescribe 'Music Library CLI' do
 
   it 'allows a user to list songs' do
     music_libray_controller = MusicLibraryController.new("./spec/fixtures/mp3s")
