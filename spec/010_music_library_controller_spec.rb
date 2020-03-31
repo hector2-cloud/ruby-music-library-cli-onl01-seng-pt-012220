@@ -25,7 +25,7 @@ describe 'MusicLibraryController' do
 
       MusicLibraryController.new('./spec/fixtures/mp3s')
       expect(Song.all.size).to eq(5)
-      expect(Artist.all.size).to eq(3)
+      expect(Artist.all.size).to eq(4)
       expect(Genre.all.size).to eq(4)
     end
   end
