@@ -1,4 +1,4 @@
-rrequire 'spec_helper'
+require 'spec_helper'
 
 describe 'MusicLibraryController' do
   describe '#initialize' do
