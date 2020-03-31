@@ -15,7 +15,7 @@ describe "MusicImporter" do
       test_music_path = "./spec/fixtures/mp3s"
       music_importer = MusicImporter.new(test_music_path)
 
-      expect(music_importer.files.size).to eq(5)
+      expect(music_importer.files.size).to eq(4)
     end
 
     it 'normalizes the filename to just the mp3 filename with no path' do
@@ -76,8 +76,8 @@ describe "MusicImporter#import" do
     music_importer = MusicImporter.new(test_music_path)
     music_importer.import
 
-    expect(Song.all.size).to eq(5)
-    expect(Artist.all.size).to eq(4)
+    expect(Song.all.size).to eq(4)
+    expect(Artist.all.size).to eq(3)
     expect(Genre.all.size).to eq(4)
 
     expect(Song.find_by_name("Green Aisles").artist.name).to eq("Real Estate")
